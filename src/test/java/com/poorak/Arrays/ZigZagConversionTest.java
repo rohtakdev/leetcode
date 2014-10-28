@@ -14,9 +14,18 @@ public class ZigZagConversionTest {
 	}
 
 	@Test
-	public final void testConvert() {
+	public final void testConvert2row() {
 		String s ="ABC";
-		assertEquals("ACB",zigZagConversion.convert(s, 2));
+		assertEquals("ACB",zigZagConversion.convert2(s, 2));
+		
+	}
+	@Test
+	public final void testConvert3row() {
+		
+		String q ="PAYPALISHIRING";
+		assertEquals("PAHNAPLSIIGYIR",zigZagConversion.convert2(q, 3));
+		
+		
 	}
 
 }
