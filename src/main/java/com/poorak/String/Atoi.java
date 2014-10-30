@@ -1,4 +1,4 @@
-package com.poorak.Arrays;
+package com.poorak.String;
 
 /**
  * Implement atoi to convert a string to an integer.

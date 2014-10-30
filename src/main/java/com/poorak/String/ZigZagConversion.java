@@ -1,4 +1,4 @@
-package com.poorak.Arrays;
+package com.poorak.String;
 
 public class ZigZagConversion {
 	public String convert(String s, int nRows) {

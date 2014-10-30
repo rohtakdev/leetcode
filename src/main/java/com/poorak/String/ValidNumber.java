@@ -1,4 +1,4 @@
-package com.poorak.Arrays;
+package com.poorak.String;
 
 /**
  * Validate if a given string is numeric.

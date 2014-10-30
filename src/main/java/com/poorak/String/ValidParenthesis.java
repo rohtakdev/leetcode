@@ -1,4 +1,4 @@
-package com.poorak.Arrays;
+package com.poorak.String;
 
 import java.util.HashMap;
 import java.util.Map;

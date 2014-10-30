@@ -1,9 +1,11 @@
-package com.poorak.Arrays;
+package com.poorak.String;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.poorak.String.ValidNumber;
 
 public class ValidNumberTest {
 
