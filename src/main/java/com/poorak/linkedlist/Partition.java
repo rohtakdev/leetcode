@@ -1,7 +1,7 @@
 package com.poorak.linkedlist;
 
 public class Partition {
-	 public ListNode partition(ListNode head, int x) {
+	 public ListNode partition1(ListNode head, int x) {
 	        if(head == null || head.next == null) return head;
 	        
 	        ListNode less = null;
@@ -36,5 +36,38 @@ public class Partition {
 	      less.next = greaterHead;
 	      
 	      return lessHead;
+	    }
+	 
+	 public ListNode partition(ListNode head, int x) {
+	        if(head == null || head.next == null) return head;
+	        
+	       
+	        
+	        //new list for greater values
+	        ListNode greater = new ListNode(0);
+	        ListNode greaterHead = greater;
+	        
+	           
+	        ListNode current =new ListNode(0);
+	        current.next =head;
+	             
+	             
+	       ListNode currentHead  = current;
+	    
+	       
+	             
+	        while(current.next != null){
+	            if(current.next.val>=x){
+	              greater.next = new ListNode(current.next.val);
+	              greater = greater.next;
+	              current.next = current.next.next;
+	        }
+	            else{
+	              current = current.next;
+	            }
+	        
+	        }
+	        current.next =greaterHead.next;
+	        return currentHead.next;
 	    }
 }

@@ -23,5 +23,14 @@ public class PartitionTest {
 		
 		assertTrue(ListUtilities.equals(expected, actual));
 	}
+	@Test
+	public final void test2() {
+		ListNode head = ListUtilities.create(2,1);
+		ListNode expected = ListUtilities.create(1,2);
+		
+		ListNode actual = partition.partition(head, 2);
+		
+		assertTrue(ListUtilities.equals(expected, actual));
+	}
 
 }
